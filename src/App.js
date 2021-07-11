@@ -1,9 +1,11 @@
 import About from './Component.js/About';
 import News from './Component.js/News';
 import Nav from './Component.js/Nav';
+import ShowClientIp from './Component.js/ShowClientIp';
 import './App.css';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 function App() {
 
@@ -14,9 +16,9 @@ function App() {
         <Nav />
         <Switch>
           <Route path="/home" exact component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/news" exact component={News} />
-
+          <Route path="/about" exact component={About} />
+          <Route path="/news"  exact component={News} />
+          <Route path="/showIP"  exact component={ShowClientIp} />
         </Switch>
       </div>
 
@@ -31,7 +33,9 @@ const Home = () => {
       <h1>We are the Software Engineers on the making.
         <br />Just have patient with us and help us grow
         <br /> by contributing to our project.</h1>
-    </div>
+      
+        </div>
+    
   )
 };
 export default App;
