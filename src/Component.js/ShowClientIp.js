@@ -6,9 +6,10 @@ import "leaflet/dist/leaflet.css";
 const ipStyle = { backgroundColor: 'rgba(226, 162, 67,0.5)' }
 const ulStyle = {listStyle: 'none',color: 'rgb(300, 162, 67)'}
 const laStyle = {color: 'Blue',fontSize:18}
+
+const {REACT_IP_GEOLOCATION_API} = process.env;
     
-const url = (`https://ipgeolocation.abstractapi.com/v1/?api_key=79235227af7141d59d62f92e887098cb&ip_address=`)
-//const url = (`https://restcountries.eu/rest/v2/name/france`)
+const url = (`https://ipgeolocation.abstractapi.com/v1/?api_key=79235227af7141d59d62f92e887098cb&ip_address=`);
 
 const ShowClientIp = () => {
 
